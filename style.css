@@ -4,7 +4,8 @@
 
 body {
   background-color: rgb(255, 242, 253);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Red Hat Text", sans-serif;
+  font-weight: 400;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -12,8 +13,9 @@ body {
 }
 
 h1 {
+  font-family: "Ancizar Sans", sans-serif;
+  font-weight: 300;
   font-size: 4rem;
   display: flex;
-  flex-direction: column; 
-  line-height: 1.5;
+  flex-direction: column;
 }
