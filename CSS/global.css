@@ -15,9 +15,13 @@ header {
   flex-direction: column;
   justify-content: center;
   max-width: 1600px;
+}
+
+header h1.intro,
+header p.contact {
   font-size: 2rem;
   font-weight: normal;
-  line-height: 1.2;
+  line-height: 1.4;
 }
 
 header p.contact {
