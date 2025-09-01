@@ -1,0 +1,23 @@
+.about {
+  display: flex;
+}
+
+#presentation {
+  margin-top: 6rem;
+}
+
+#presentation p {
+    font-size: 1.5rem;
+}
+
+#cv {
+}
+
+@media screen and (width >= 700px) {
+  .about {
+    max-width: 685px;
+  }
+  #presentation p {
+    font-size: 2rem;
+}
+}

@@ -30,6 +30,12 @@ nav a.active {
   color: rgba(255, 89, 0, 1);
 }
 
+nav a:hover {
+    cursor: url(/public/pointer.svg), pointer;
+}
+
+
+
 @media screen and (width >= 700px) {
   ul {
     justify-content: flex-end;
