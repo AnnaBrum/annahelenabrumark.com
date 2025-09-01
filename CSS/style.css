@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: rgb(254, 255, 240);
+  font-family: "TASA Orbiter", sans-serif;
+  padding: 1rem;
+}
+
+header {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1600px;
+}
+
+header .intro-container {
+}
+
+header h1.intro,
+header p.contact {
+  font-size: 1.5rem;
+  font-weight: normal;
+  line-height: 1.4;
+  display: inline;
+}
+
+header p.contact {
+  margin: 0;
+}
+
+header a {
+  color: rgba(255, 89, 0, 1);
+  transition: color 0.3s ease;
+}
+
+header a:hover {
+  color: rgb(0, 153, 255);
+}
+
+h3 {
+  font-weight: normal;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media screen and (width >= 700px) {
+  body {
+    padding: 2rem;
+  }
+
+  header h1.intro,
+  header p.contact {
+    font-size: 4rem;
+    font-weight: normal;
+    line-height: 1.2;
+    display: inline;
+  }
+}
