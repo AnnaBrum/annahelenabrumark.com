@@ -1,6 +1,6 @@
 nav {
   display: flex;
-  margin-bottom: 2rem;
+  height: var(--nav-height);
 }
 
 ul {
@@ -20,7 +20,7 @@ li {
 
 nav a,
 nav a:visited {
-  color: inherit;   
+  color: inherit;
   text-decoration: none;
   transition: color 0.3s ease;
 }
@@ -31,10 +31,8 @@ nav a.active {
 }
 
 nav a:hover {
-    cursor: url(/public/pointer.svg), pointer;
+  cursor: url(/public/pointer.svg), pointer;
 }
-
-
 
 @media screen and (width >= 700px) {
   ul {

@@ -2,6 +2,11 @@
   box-sizing: border-box;
 }
 
+:root {
+  --nav-height: 80px;
+  --negative-margin: calc((var(--nav-height) / 2) * -1);
+}
+
 body {
   margin: 0;
   background-color: rgb(254, 255, 240);
@@ -9,12 +14,18 @@ body {
   padding: 1rem;
 }
 
-header {
+.container {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: stretch;
+}
+
+header {
   max-width: 1600px;
+  flex: 1;
+  align-content: center;
+  translate: 0px var(--negative-margin);
 }
 
 header h1.intro,
