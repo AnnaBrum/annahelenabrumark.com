@@ -3,7 +3,7 @@ nav {
   height: var(--nav-height);
 }
 
-ul {
+.nav-list {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -14,33 +14,33 @@ ul {
   width: 100%;
 }
 
-li {
+.nav-list-item {
   font-size: 1.5rem;
 }
 
-nav a,
-nav a:visited {
+.nav-list-item a,
+.nav-list-item a:visited {
   color: inherit;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
-nav a:hover,
-nav a.active {
-  color: rgba(255, 89, 0, 1);
+.nav-list-item a:hover,
+.nav-list-item a.active {
+  color: var(--orange);
 }
 
-nav a:hover {
+.nav-list-item a:hover {
   cursor: url(/public/pointer.svg), pointer;
 }
 
 @media screen and (width >= 700px) {
-  ul {
+  .nav-list {
     justify-content: flex-end;
     gap: 2rem;
   }
 
-  li {
+  .nav-list-item {
     font-size: 2rem;
   }
 }
