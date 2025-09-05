@@ -1,23 +1,17 @@
-.about {
-  display: flex;
+.cv-link-container {
+  justify-self: center;
 }
-
 #presentation {
+  max-width: 685px;
   margin-top: 6rem;
 }
 
 #presentation p {
-    font-size: 1.5rem;
-}
-
-#cv {
+  font-size: 1.5rem;
 }
 
 @media screen and (width >= 700px) {
-  .about {
-    max-width: 685px;
-  }
   #presentation p {
     font-size: 2rem;
-}
+  }
 }
