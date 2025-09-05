@@ -1,3 +1,6 @@
+.cv-link-container {
+  justify-self: center;
+}
 #presentation {
   max-width: 685px;
   margin-top: 6rem;
