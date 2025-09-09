@@ -3,16 +3,50 @@
 }
 
 :root {
-  /* spacing */
+  /* SPACING */
   --nav-height: 80px;
   --negative-margin: calc((var(--nav-height) / 2) * -1);
   --padding-desktop: 2rem;
   --padding-mobile: 1rem;
 
-  /* colors */
+  /* COLORS */
   --vanilla: rgb(254, 255, 240);
   --sky-blue: rgb(0, 153, 255);
   --orange: rgba(255, 89, 0, 1);
+}
+
+/* PAGE TRANSITIONS */
+@view-transition {
+  navigation: auto;
+}
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none; /* keep nav/logo static */
+}
+
+@keyframes fade-out {
+  to {
+    opacity: 0;
+  }
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+}
+
+::view-transition-old(page-transition) {
+  animation: fade-out 180ms ease forwards;
+}
+::view-transition-new(page-transition) {
+  animation: fade-in 220ms ease 60ms both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  main {
+    view-transition-name: none;
+  } /* Respect user settings for reduced motion*/
 }
 
 body {
@@ -28,30 +62,34 @@ body {
   padding: var(--padding-mobile);
 }
 
-header {
+main {
+  view-transition-name: page-transition; /* Name the main content as the shared element */
   max-width: 1600px;
   flex: 1;
   align-content: center;
+}
+
+main.startpage {
   translate: 0px var(--negative-margin);
 }
 
-header h1.intro,
-header p.contact {
+main h1.intro,
+main p.contact {
   font-size: 2rem;
   font-weight: normal;
   line-height: 1.4;
 }
 
-header p.contact {
+main p.contact {
   margin: 0;
 }
 
-header a {
+main a {
   color: var(--orange);
   transition: color 0.3s ease;
 }
 
-header a:hover {
+main a:hover {
   color: var(--sky-blue);
 }
 
@@ -64,8 +102,8 @@ a {
     padding: var(--padding-desktop);
   }
 
-  header h1.intro,
-  header p.contact {
+  main h1.intro,
+  main p.contact {
     font-size: 4rem;
     font-weight: normal;
     line-height: 1.2;
