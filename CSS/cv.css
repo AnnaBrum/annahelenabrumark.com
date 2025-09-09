@@ -1,4 +1,4 @@
-.container.cv {
+.cv {
   height: 100%;
   width: 100%;
 }
@@ -9,6 +9,7 @@
   font-family: "Inter", sans-serif;
   width: min(100%, 1400px);
   align-self: center;
+  margin-top: 4rem;
 }
 
 .sections-container {
@@ -138,7 +139,7 @@ details[open] summary::after {
 }
 
 .cv-item-body {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
   line-height: 1.4;
   letter-spacing: 0.04em;
 }
