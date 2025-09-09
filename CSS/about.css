@@ -1,17 +1,17 @@
-.cv-link-container {
-  justify-self: center;
-}
-#presentation {
-  max-width: 685px;
-  margin-top: 6rem;
+.presentation {
+  max-width: 850px;
 }
 
-#presentation p {
+.presentation p {
   font-size: 1.5rem;
 }
 
+.presentation a {
+  font-size: 2rem;
+}
+
 @media screen and (width >= 700px) {
-  #presentation p {
+  .presentation p {
     font-size: 2rem;
   }
 }
