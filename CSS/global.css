@@ -13,6 +13,15 @@
   --vanilla: rgb(254, 255, 240);
   --sky-blue: rgb(0, 153, 255);
   --orange: rgba(255, 89, 0, 1);
+
+  /* THEME TOKENS  */
+  /* --bg: var(--vanilla);
+  --text: #1a1a1a;
+  --link: var(--orange);
+  --link-hover: var(--sky-blue);
+  --nav-link: var(--link);
+  --nav-link-hover: var(--link-hover);
+  --border: var(--text); */
 }
 
 /* PAGE TRANSITIONS */
@@ -51,12 +60,11 @@
 
 body {
   margin: 0;
-  background-color: var(--vanilla);
+  background-color: var(--bg);
   font-family: "TASA Orbiter", sans-serif;
 }
 
 .container {
-  height: 100vh;
   display: flex;
   flex-direction: column;
   padding: var(--padding-mobile);
@@ -69,44 +77,21 @@ main {
   align-content: center;
 }
 
-main.startpage {
-  translate: 0px var(--negative-margin);
-}
-
-main h1.intro,
-main p.contact {
-  font-size: 2rem;
-  font-weight: normal;
-  line-height: 1.4;
-}
-
-main p.contact {
-  margin: 0;
-}
-
 main a {
-  color: var(--orange);
+  color: var(--link);
   transition: color 0.3s ease;
 }
 
 main a:hover {
-  color: var(--sky-blue);
+  color: var(--link-hover);
 }
 
-a {
+main a {
   text-decoration: none;
 }
 
 @media screen and (width >= 700px) {
   .container {
     padding: var(--padding-desktop);
-  }
-
-  main h1.intro,
-  main p.contact {
-    font-size: 4rem;
-    font-weight: normal;
-    line-height: 1.2;
-    display: inline;
   }
 }

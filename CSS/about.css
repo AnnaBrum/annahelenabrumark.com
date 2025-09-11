@@ -1,3 +1,7 @@
+.about {
+  color: var(--text)
+}
+
 .presentation {
   max-width: 850px;
 }
