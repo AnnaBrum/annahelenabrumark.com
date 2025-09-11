@@ -1,0 +1,47 @@
+body[data-theme="startpage"] {
+  --bg: #fff7ed;
+  --text: black;
+  --link: #ff5900;
+  --link-hover: #0099ff;
+  --nav-link: var(--text);
+  --nav-link-hover: var(--link-hover);
+  --nav-link-active: var(--link);
+  --border: 1px solid var(--text);
+  --cursor-url: url(/public/pointer_blue.svg), pointer;
+}
+
+body[data-theme="about"] {
+  --bg: #e8ffe0;
+  --text: #003c1f;
+  --link: #00924c;
+  --link-hover: #ff5900;
+  --nav-link: var(--text);
+  --nav-link-hover: var(--link);
+  --nav-link-active: var(--link-hover);
+  --border: 1px solid var(--text);
+  --cursor-url: url(/public/pointer_green.svg), pointer;
+}
+
+body[data-theme="projects"] {
+  --bg: #f3f8ff;
+  --text: #0e2a3f;
+  --link: #0b6bcb;
+  --link-hover: #ff6b35;
+  --nav-link: var(--text);
+  --nav-link-hover: var(--link-hover);
+  --nav-link-active: var(--link);
+  --border: 1px solid var(--text);
+  --cursor-url: url(/public/pointer_pink.svg), pointer;
+}
+
+body[data-theme="cv"] {
+  --bg: #f3f8ff;
+  --text: #081c2b;
+  --link: #0b6bcb;
+  --link-hover: #ff6b35;
+  --nav-link: var(--text);
+  --nav-link-hover: var(--link-hover);
+  --nav-link-active: var(--link);
+  --border: 1px solid var(--text);
+  --cursor-url: url(/public/pointer_orange.svg), pointer;
+}

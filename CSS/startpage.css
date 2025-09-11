@@ -1,0 +1,25 @@
+.container.startpage {
+  height: 100vh;
+}
+
+.startpage h1.intro,
+.startpage p.contact {
+  font-size: 2rem;
+  font-weight: normal;
+  line-height: 1.4;
+}
+
+.startpage p.contact {
+  margin: 0;
+}
+
+
+@media screen and (width >= 700px) {
+  .startpage h1.intro,
+  .startpage p.contact {
+    font-size: 4rem;
+    font-weight: normal;
+    line-height: 1.2;
+    display: inline;
+  }
+}

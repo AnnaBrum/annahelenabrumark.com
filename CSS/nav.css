@@ -15,23 +15,26 @@ nav {
 }
 
 .nav-list-item {
+  color: var(--nav-link);
   font-size: 1.5rem;
 }
 
 .nav-list-item a,
 .nav-list-item a:visited {
-  color: inherit;
+  color: unset;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
-.nav-list-item a:hover,
+.nav-list-item a:hover {
+  color: var(--nav-link-hover);
+}
 .nav-list-item a.active {
-  color: var(--orange);
+  color: var(--nav-link-active);
 }
 
 .nav-list-item a:hover {
-  cursor: url(/public/pointer.svg), pointer;
+  cursor: var(--cursor-url);
 }
 
 @media screen and (width >= 700px) {

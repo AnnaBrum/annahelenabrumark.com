@@ -4,7 +4,7 @@
 }
 
 .cv-container {
-  border: 1px solid black;
+  border: var(--border);
   padding: 0;
   font-family: "Inter", sans-serif;
   width: min(100%, 1400px);
@@ -19,7 +19,6 @@
 
 .cv-block {
   display: grid;
-  /* gap: 1rem; */
   grid-template-columns: 1fr;
   grid-template-areas:
     "cat"
@@ -46,7 +45,7 @@
   letter-spacing: 0.06em;
   text-align: center;
   padding-bottom: 1rem;
-  border-bottom: 1px solid black;
+  border-bottom: var(--border);
 }
 
 .cv-col {
@@ -76,7 +75,7 @@
 .cv-col-head h2 {
   font-weight: 400;
   font-size: inherit;
-  border: 1px solid black;
+  border: var(--border);
   border-radius: 50%;
   padding: 2rem;
   width: 4rem;
@@ -98,7 +97,7 @@ details {
   width: 100%;
   box-sizing: border-box;
   padding: 2rem;
-  border-bottom: 1px solid black;
+  border-bottom: var(--border);
 }
 
 summary {
@@ -166,7 +165,7 @@ ul.cv-item-body {
   .cv-block {
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
     grid-template-areas: "cat exp edu";
-    border-top: 1px solid black;
+    border-top: var(--border);
     margin-bottom: 0;
   }
 
@@ -195,13 +194,13 @@ ul.cv-item-body {
   }
 
   .cv-col.experience {
-    border-left: 1px solid black;
-    border-right: 1px solid black;
+    border-left: var(--border);
+    border-right: var(--border);
   }
 
   .cv-col-head.exp {
-    border-left: 1px solid black;
-    border-right: 1px solid black;
+    border-left: var(--border);
+    border-right: var(--border);
   }
 
   details:last-of-type {
