@@ -46,10 +46,10 @@
 }
 
 ::view-transition-old(page-transition) {
-  animation: fade-out 180ms ease forwards;
+  animation: fade-out 0.5s ease forwards;
 }
 ::view-transition-new(page-transition) {
-  animation: fade-in 220ms ease 60ms both;
+  animation: fade-in 0.5s ease 0.5s both;
 }
 
 @media (prefers-reduced-motion: reduce) {
