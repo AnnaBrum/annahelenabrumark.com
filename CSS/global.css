@@ -31,10 +31,13 @@
 
 ::view-transition-old(root),
 ::view-transition-new(root) {
-  animation: none; /* keep nav/logo static */
+  animation: none;
 }
 
 @keyframes fade-out {
+  from {
+    opacity: 1;
+  }
   to {
     opacity: 0;
   }
@@ -43,19 +46,29 @@
   from {
     opacity: 0;
   }
+  to {
+    opacity: 1;
+  }
 }
 
-::view-transition-old(page-transition) {
-  animation: fade-out 0.5s ease forwards;
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
 }
-::view-transition-new(page-transition) {
-  animation: fade-in 0.5s ease 0.5s both;
+
+::view-transition-old(main) {
+  animation: fade-out 0.5s ease both;
+}
+::view-transition-new(main) {
+  animation: fade-in 0.5s ease both;
+  animation-delay: 0.5s;
 }
 
 @media (prefers-reduced-motion: reduce) {
   main {
     view-transition-name: none;
-  } /* Respect user settings for reduced motion*/
+  }
 }
 
 body {
@@ -71,7 +84,7 @@ body {
 }
 
 main {
-  view-transition-name: page-transition; /* Name the main content as the shared element */
+  view-transition-name: main; /* Name the main content as the shared element */
   max-width: 1600px;
   flex: 1;
   align-content: center;
