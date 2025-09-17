@@ -1,5 +1,9 @@
+.page-about .container {
+  height: 100vh;
+}
+
 .about {
-  color: var(--text)
+  color: var(--text);
 }
 
 .presentation {
