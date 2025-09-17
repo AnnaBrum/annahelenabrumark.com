@@ -72,6 +72,7 @@
 }
 
 body {
+  height: 100%; 
   margin: 0;
   background-color: var(--bg);
   font-family: "TASA Orbiter", sans-serif;
