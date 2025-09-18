@@ -1,0 +1,25 @@
+.page-about .container {
+  height: 100vh;
+}
+
+.about {
+  color: var(--text);
+}
+
+.presentation {
+  max-width: 850px;
+}
+
+.presentation p {
+  font-size: 1.5rem;
+}
+
+.presentation a {
+  font-size: 2rem;
+}
+
+@media screen and (width >= 700px) {
+  .presentation p {
+    font-size: 2rem;
+  }
+}
