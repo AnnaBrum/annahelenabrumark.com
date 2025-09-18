@@ -1,0 +1,26 @@
+{
+  "name": "annahelenabrumark.com",
+  "version": "1.0.0",
+  "description": "Portfolio website under construction!",
+  "main": "functions.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnnaBrum/annahelenabrumark.com.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AnnaBrum/annahelenabrumark.com/issues"
+  },
+  "homepage": "https://github.com/AnnaBrum/annahelenabrumark.com#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.2"
+  },
+  "type": "module"
+}
