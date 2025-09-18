@@ -1,4 +1,3 @@
-{# src/_includes/layouts/base.njk #}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -6,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{ title or "Anna Helena Brumark" }}</title>
 
-    {# Keep existing CSS via passthrough (quick win) #}
+    {# Keep existing CSS via passthrough #}
     <link rel="stylesheet" href="/CSS/global.css" />
     <link rel="stylesheet" href="/CSS/color-themes.css" />
     <link rel="stylesheet" href="/CSS/nav.css" />
 
-    {% if theme %}
+    {# custom color themes #} {% if theme %}
     <link rel="stylesheet" href="/CSS/{{ theme }}.css" />
     {% endif %}
 
@@ -32,19 +31,11 @@
   </head>
   <body class="{{ bodyClass }}" data-theme="{{ theme }}">
     <div class="container">
-      <nav>
-        <ul class="nav-list">
-          <li class="nav-list-item"><a href="/">Home</a></li>
-          <li class="nav-list-item"><a href="/projects/">Projects</a></li>
-          <li class="nav-list-item"><a href="/about/">About</a></li>
-        </ul>
-      </nav>
-
+      {% include "partials/navbar.njk" %}
       <main class="{{ mainClass | default(theme) }}">
         {{ content | safe }}
       </main>
     </div>
-
     <script src="/functions.js"></script>
   </body>
 </html>

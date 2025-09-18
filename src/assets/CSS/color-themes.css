@@ -1,8 +1,8 @@
 body[data-theme="startpage"] {
-  --bg: #fff7ed;
+  --bg: var(--vanilla);
   --text: black;
-  --link: #ff5900;
-  --link-hover: #0099ff;
+  --link: var(--orange);
+  --link-hover: var(--sky-blue);
   --nav-link: var(--text);
   --nav-link-hover: var(--link-hover);
   --nav-link-active: var(--link);
@@ -11,9 +11,9 @@ body[data-theme="startpage"] {
 }
 
 body[data-theme="about"] {
-  --bg: #e8ffe0;
-  --text: #003c1f;
-  --link: #00924c;
+  --bg: var(--vanilla);
+  --text: var(--forest-green);
+  --link: var(--leaf-green);
   --link-hover: #ff5900;
   --nav-link: var(--text);
   --nav-link-hover: var(--link);
@@ -23,10 +23,10 @@ body[data-theme="about"] {
 }
 
 body[data-theme="projects"] {
-  --bg: #f3f8ff;
-  --text: #0e2a3f;
-  --link: #0b6bcb;
-  --link-hover: #ff6b35;
+  --bg: var(----light-blue);
+  --text: var(--midnight-blue);
+  --link: var(--sky-blue);
+  --link-hover: var(--orange);
   --nav-link: var(--text);
   --nav-link-hover: var(--link-hover);
   --nav-link-active: var(--link);
@@ -35,10 +35,10 @@ body[data-theme="projects"] {
 }
 
 body[data-theme="cv"] {
-  --bg: #f3f8ff;
-  --text: #081c2b;
-  --link: #0b6bcb;
-  --link-hover: #ff6b35;
+  --bg: var(----light-blue);
+  --text: var(--midnight-blue);
+  --link: var(--sky-blue);
+  --link-hover: var(--orange);
   --nav-link: var(--text);
   --nav-link-hover: var(--link-hover);
   --nav-link-active: var(--link);

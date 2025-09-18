@@ -10,6 +10,11 @@ export default function (eleventyConfig) {
 
   // 3) Set input/output dirs
   return {
-    dir: { input: "src", includes: "_includes", output: "_site" },
+    dir: {
+      input: "src",
+      includes: "_includes",
+      layouts: "_includes/layouts",
+      output: "_site",
+    },
   };
 }

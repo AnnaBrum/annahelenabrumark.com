@@ -12,16 +12,11 @@
   /* COLORS */
   --vanilla: rgb(254, 255, 240);
   --sky-blue: rgb(0, 153, 255);
+  --light-blue: rgb(243, 248, 255);
+  --midnight-blue: rgb(14, 42, 63);
   --orange: rgba(255, 89, 0, 1);
-
-  /* THEME TOKENS  */
-  /* --bg: var(--vanilla);
-  --text: #1a1a1a;
-  --link: var(--orange);
-  --link-hover: var(--sky-blue);
-  --nav-link: var(--link);
-  --nav-link-hover: var(--link-hover);
-  --border: var(--text); */
+  --forest-green: rgb(0, 60, 31);
+  --leaf-green: rgb(0, 146, 76);
 }
 
 /* PAGE TRANSITIONS */
@@ -72,7 +67,7 @@
 }
 
 body {
-  height: 100%; 
+  height: 100%;
   margin: 0;
   background-color: var(--bg);
   font-family: "TASA Orbiter", sans-serif;
