@@ -1,5 +1,6 @@
 .page-startpage .container{
   height: 100vh;
+  color: var(--text);
 }
 
 .startpage h1.intro,
