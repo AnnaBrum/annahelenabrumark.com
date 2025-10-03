@@ -4,100 +4,48 @@
 
 :root {
   /* SPACING */
-  --nav-height: 80px;
-  --negative-margin: calc((var(--nav-height) / 2) * -1);
-  --padding-desktop: 2rem;
-  --padding-mobile: 1rem;
-
-  /* COLORS */
-  --brick: rgb(112, 73, 0);;
-  --vanilla: rgb(254, 255, 240);
-  --sky-blue: rgb(0, 153, 255);
-  --light-blue: rgb(243, 248, 255);
-  --midnight-blue: rgb(14, 42, 63);
-  --orange: rgba(255, 89, 0, 1);
-  --forest-green: rgb(0, 60, 31);
-  --leaf-green: rgb(0, 146, 76);
-}
-
-/* PAGE TRANSITIONS */
-@view-transition {
-  navigation: auto;
-}
-
-::view-transition-old(root),
-::view-transition-new(root) {
-  animation: none;
-}
-
-@keyframes fade-out {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-}
-@keyframes fade-in {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-::view-transition-old(root),
-::view-transition-new(root) {
-  animation: none;
-  mix-blend-mode: normal;
-}
-
-::view-transition-old(main) {
-  animation: fade-out 0.5s ease both;
-}
-::view-transition-new(main) {
-  animation: fade-in 0.5s ease both;
-  animation-delay: 0.5s;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  main {
-    view-transition-name: none;
-  }
+  --padding-desktop: 1rem 2rem 2rem 2rem;
+  --padding-mobile: 0.5rem 1rem 1rem 1rem;
 }
 
 body {
   height: 100%;
   margin: 0;
   background-color: var(--bg);
-  font-family: "TASA Orbiter", sans-serif;
+  font-family: "JetBrains Mono NL", monospace;
+}
+
+.back-link {
+  text-align: center; /* mitten */
+  padding: 1rem;
+  text-decoration: none;
+  color: inherit;
+  font-size: 0.9rem;
 }
 
 .container {
   display: flex;
   flex-direction: column;
+  height: 100vh;
   padding: var(--padding-mobile);
 }
 
-main {
-  view-transition-name: main; /* Name the main content as the shared element */
-  max-width: 1600px;
-  flex: 1;
-  align-content: center;
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-main a {
-  color: var(--link);
-  transition: color 0.3s ease;
-}
-
-main a:hover {
-  color: var(--link-hover);
-}
-
-main a {
+h1 {
   text-decoration: none;
+  font-weight: 400;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+a:visited {
+  color: inherit;
 }
 
 @media screen and (width >= 700px) {

@@ -1,16 +1,14 @@
 .page-cv main {
-  height: 100%;
-  width: 100%;
   margin: auto;
 }
 
 .cv-container {
   border: var(--border);
   padding: 0;
-  font-family: "Inter", sans-serif;
   width: min(100%, 1400px);
   align-self: center;
   margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 
 .sections-container {
@@ -25,7 +23,6 @@
     "cat"
     "exp"
     "edu";
-  margin-bottom: 4rem;
 }
 
 .cv-header-row {
@@ -39,14 +36,13 @@
 
 .cv-category {
   grid-area: cat;
-  margin: 0;
   font-size: 1.25rem;
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.06em;
   text-align: center;
   padding-bottom: 1rem;
-  border-bottom: var(--border);
+  margin-top: 4rem;
 }
 
 .cv-col {
@@ -92,6 +88,10 @@
 }
 .education {
   grid-area: edu;
+}
+
+.education details:last-child {
+  border-bottom: none;
 }
 
 details {
@@ -171,6 +171,7 @@ ul.cv-item-body {
   }
 
   .cv-category {
+    margin: 0;
     padding-bottom: 0;
     border-bottom: 0;
   }

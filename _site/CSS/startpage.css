@@ -1,26 +1,121 @@
-.page-startpage .container{
-  height: 100vh;
-  color: var(--text);
+.startpage {
+  width: 100%;
+  height: 100%;
 }
 
-.startpage h1.intro,
-.startpage p.contact {
-  font-size: 2rem;
-  font-weight: normal;
-  line-height: 1.4;
+.startpage-grid {
+  width: 100%;
+  height: 100%;
+  border: var(--border);
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
-.startpage p.contact {
-  margin: 0;
+.intro,
+.dev,
+.design,
+.art,
+.about-cv,
+.playground {
+  grid-column: auto;
+  grid-row: auto;
 }
 
+.dev,
+.design,
+.art,
+.about-cv,
+.playground {
+  text-transform: uppercase;
+}
+
+.tile {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: clamp(18px, 2.2vw, 28px);
+  line-height: 1.45;
+  border-top: var(--border);
+  border-left: none;
+}
+.tile:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 3px;
+}
+.tile:hover {
+  filter: brightness(0.98);
+}
+.intro {
+  display: flex;
+  align-items: center;
+  border-top: none;
+}
+
+.intro-body {
+  max-width: 46ch;
+  margin-top: 0.25rem;
+  text-align: left;
+}
+.intro-body a {
+  color: inherit;
+}
+
+.intro,
+a.tile.about-cv {
+  border-left: none;
+}
 
 @media screen and (width >= 700px) {
-  .startpage h1.intro,
-  .startpage p.contact {
-    font-size: 4rem;
-    font-weight: normal;
-    line-height: 1.2;
-    display: inline;
+  .startpage-grid {
+    grid-template-columns: 1.15fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    align-content: start;
+  }
+
+  .intro {
+    grid-column: 1;
+    grid-row: 1 / span 3;
+  }
+
+  .tile {
+    border-left: var(--border);
+  }
+
+  a.tile.dev {
+    border-top: none;
+  }
+
+  .intro {
+    border-top: none;
+    border-left: none;
+  }
+
+  .intro-body {
+    padding: 2rem;
+  }
+
+  .dev {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .design {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .art {
+    grid-column: 2;
+    grid-row: 3;
+  }
+
+  .about-cv {
+    grid-column: 1;
+    grid-row: 4;
+  }
+  .playground {
+    grid-column: 2;
+    grid-row: 4;
   }
 }
