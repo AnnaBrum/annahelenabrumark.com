@@ -23,6 +23,10 @@ body {
   font-size: 0.9rem;
 }
 
+a:hover {
+  text-transform: uppercase;
+}
+
 .container {
   display: flex;
   flex-direction: column;
