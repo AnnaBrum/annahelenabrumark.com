@@ -1,12 +1,16 @@
   :root {
   --brick: rgb(112, 73, 0);;
   --vanilla: rgb(254, 255, 240);
-  --sky-blue: rgb(0, 153, 255);
+  --lime:  rgb(236, 255, 127);
+  --sky-blue: rgb(121, 201, 255);
   --light-blue: rgb(243, 248, 255);
   --midnight-blue: rgb(14, 42, 63);
-  --orange: rgba(255, 89, 0, 1);
+  --orange: rgb(255, 106, 52);
   --forest-green: rgb(0, 60, 31);
   --leaf-green: rgb(0, 146, 76);
+  --sun: rgb(240, 212, 29);
+  --mustard: rgb(211, 148, 0);
+  --vintage-green: rgb(164, 164, 0);
   }
   
   body[data-theme="startpage"] {
