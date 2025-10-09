@@ -157,12 +157,12 @@ ul.cv-item-body {
 @media (min-width: 700px) {
   .page-cv main {
     width: 100%;
-    height: 100%;
   }
 
   .cv-container {
     min-width: 800px;
     margin-inline: auto;
+    margin-bottom: 4rem;
   }
 
   .cv-block {

@@ -6,6 +6,7 @@
   /* SPACING */
   --padding-desktop: 1rem 2rem 2rem 2rem;
   --padding-mobile: 0.5rem 1rem 1rem 1rem;
+  --header: 43px;
 }
 
 body {
@@ -30,7 +31,7 @@ a:hover {
 .container {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 100vh; 
   padding: var(--padding-mobile);
 }
 
